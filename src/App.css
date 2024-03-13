@@ -1,42 +1,165 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --mainFont: "Overpass", sans-serif;
+}
+
+.mainWrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: #131518;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mainFont);
+}
+.rateCard{
+  width: 412px;
+  height: 416px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+.starOval{
+  width: 48px;
+  height: 48px;
+  background: #262E38;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.starOval img{
+  width: 16px;
+  height: 16px;
+}
+.middleSection .question{
+  width: 210px;
+  height: 43px; 
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.questionText{
+  width: 340px;
+  height: 72px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #969FAD;
+  margin-top: 7px;
+}
+.numbersSection{
+  width: 341px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 24px 0px 32px 0px;
+}
+.numbers{
+  width: 51px;
+  height: 51px;
+  background-color: #262E38;
+  border-radius: 50%;
+  border-width: 0px;
+  color: var(--Medium-Gray, #7C8798);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+.numbers:hover{
+  background: var(--Medium-Gray, #7C8798);
+  color: #FFF;
+}
+button{
+  width: 341px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 22.5px;
+  background: var(--Orange, #FC7614);
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  border-width: 0px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover{
+  background: #FFF;
+  color: #FC7614;
+}
+/* ////// */
+.resultCard{
+  width: 412px;
+  height: 416px;
+  border-radius: 30px;
+  background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+  padding: 45px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+}
+.imageSection,
+.imageSection{
+  width: 162px;
+  height: 108px;
+}
+.selectRate{
+  color:  #FC7614;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 22.5px;
+  background: #262E38;
+  width: 193px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.gratitude{
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.gratitudeText{
+  width: 340px;
+  color:  #969FAD;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  margin-top: 7px;
 }
